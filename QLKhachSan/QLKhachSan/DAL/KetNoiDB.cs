@@ -14,7 +14,7 @@ namespace QLKhachSan.DLL
 
         private SqlTransaction tran = null;
         public KetNoiDB() {
-            conn = new SqlConnection(@"Data Source=DESKTOP-PF25KAL\KEVIN;Initial Catalog=QLKhachSan;Integrated Security=True");
+            conn = new SqlConnection(@"Data Source=DUC\SQLEXPRESS;Initial Catalog=QLKhachSan;Integrated Security=True");
         }
 
         //Open connect
