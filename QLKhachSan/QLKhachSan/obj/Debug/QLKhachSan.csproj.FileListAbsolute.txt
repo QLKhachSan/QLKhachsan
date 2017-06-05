@@ -16,3 +16,6 @@ E:\Thực tập\QLKS\QLKhachSan\QLKhachSan\obj\Debug\QLKhachSan.csproj.GenerateR
 E:\Thực tập\QLKS\QLKhachSan\QLKhachSan\obj\Debug\QLKhachSan.exe
 E:\Thực tập\QLKS\QLKhachSan\QLKhachSan\obj\Debug\QLKhachSan.pdb
 E:\Thực tập\QLKS\QLKhachSan\QLKhachSan\obj\Debug\QLKhachSan.csprojResolveAssemblyReference.cache
+E:\GitHub\QLKhachsan\QLKhachSan\QLKhachSan\bin\Debug\QLKhachSan.exe.config
+E:\GitHub\QLKhachsan\QLKhachSan\QLKhachSan\obj\Debug\QLKhachSan.exe
+E:\GitHub\QLKhachsan\QLKhachSan\QLKhachSan\obj\Debug\QLKhachSan.pdb

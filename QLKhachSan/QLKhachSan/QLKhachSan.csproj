@@ -49,10 +49,12 @@
     <Compile Include="BLL\BUS_Emp.cs" />
     <Compile Include="BLL\BUS_Main.cs" />
     <Compile Include="BLL\BUS_tblUser.cs" />
+    <Compile Include="BLL\BUS_ThuePhong.cs" />
     <Compile Include="DAL\KetNoiDB.cs" />
     <Compile Include="DAL\SQL_Emp.cs" />
     <Compile Include="DAL\SQL_Main.cs" />
     <Compile Include="DAL\SQL_tblUser.cs" />
+    <Compile Include="DAL\SQL_ThuePhong.cs" />
     <Compile Include="Entities\EC_tblUser.cs" />
     <Compile Include="GUI\frmDichvu.cs">
       <SubType>Form</SubType>
