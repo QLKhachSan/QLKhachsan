@@ -19,6 +19,19 @@ namespace QLKhachSan.GUI
             InitializeComponent();
         }
 
+        //USE DELEGATE TAKE DATA
+        public void takeData(DataGridView dgv)
+        {
+            txtMa.Text      = dgv.CurrentRow.Cells[0].Value.ToString();
+            txtTen.Text     = dgv.CurrentRow.Cells[1].Value.ToString();
+            cmbSex.Text     = dgv.CurrentRow.Cells[2].Value.ToString();
+            txtCMND.Text    = dgv.CurrentRow.Cells[3].Value.ToString();
+            txtDiaChi.Text  = dgv.CurrentRow.Cells[4].Value.ToString();
+            txtCoQuan.Text  = dgv.CurrentRow.Cells[5].Value.ToString();
+            txtSDT.Text     = dgv.CurrentRow.Cells[6].Value.ToString();
+            txtEmail.Text   = dgv.CurrentRow.Cells[7].Value.ToString();
+        }
+
         private void btnOK_Click(object sender, EventArgs e)
         {
             DataSet ds = new DataSet();
@@ -39,11 +52,11 @@ namespace QLKhachSan.GUI
                     cmbSex.Text = "true";
                 else
                     cmbSex.Text = "false";
-                string cmnd = txtCMND.Text;
+                string cmnd =   txtCMND.Text;
                 string diachi = txtDiaChi.Text;
                 string coquan = txtCoQuan.Text;
-                string sdt = txtSDT.Text;
-                string email = txtEmail.Text;
+                string sdt =    txtSDT.Text;
+                string email =  txtEmail.Text;
 
                 List<SqlParameter> li = new List<SqlParameter>();
                 SqlParameter a;
@@ -78,7 +91,7 @@ namespace QLKhachSan.GUI
                 DialogResult dlr = MessageBox.Show("Bạn muốn lưu thông tin không ?", "Thông Báo", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
                 if (dlr == DialogResult.Yes)
                 {
-                    ret = doit.doStoredProceduce("themKhach", li.ToArray());
+                    ret = doit.doStoredProceduce("suaKhach", li.ToArray());
                     doit.Close();
                     if (ret < 0)
                     {
